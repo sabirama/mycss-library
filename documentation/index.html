@@ -1,0 +1,1298 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MC CSS LIBRARY | DOCUMENTATION</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../mcstyle.css" />
+    <link rel="stylesheet" href="../css/icons.css" />
+  </head>
+  <body>
+    <a href="#" class="fixed bottom-10 right-40 opacity-40" id="to-top">TOP</a>
+    <div id="root" class="d-flex flex-col justify-center">
+      <header class="p-16 pt-36 w-100 d-flex d-block-s justify-between">
+        <a href="/" class="px-8"><i class="icon home-logo"></i></a>
+        <nav>
+          <ul class="d-flex">
+            <li><a href="./">DOCUMENTATION</a></li>
+            <li><a href="../about" class="px-8 pb">ABOUT</a></li>
+          </ul>
+        </nav>
+      </header>
+     <main>
+      <section class="d-flex w-100 m-auto p-16 flex-col">
+        <header class="pb-8">
+          <h2 class="pb-28">MC CSS LIBRARY DOCUMENTATION</h2>
+          <h3 class="pb-8">Defining breakpoints:</h3>
+          <i>
+            In responsive web design, breakpoints are specific points at which a
+            website's layout or design changes to accommodate different screen
+            sizes or devices. Apply different styles based on the width of the
+            viewport. This library breakpoint starts from smaller device width
+            to wider devices, meaning css styling for smaller devices is applied
+            first.
+          </i>
+        </header>
+        <main>
+          <div>
+            <span>Breakpoints</span>
+            <span>extra small &lt; 480px</span> :
+            <span>small &lt; 768px</span> : <span>medium &lt; 1024px</span> :
+            <span>large &lt; 1200px</span> :
+            <span>extra large &gt; 1200px</span>
+          </div>
+          <div>
+            <button class="mt-16 button-m primary">
+              <a href="./mycss.css" download>DOWNLOAD STYLE CSS</a>
+            </button>
+            <button class="mt-16 button-m primary">
+              <a href="../downloadables/icons.zip" download
+                >DOWNLOAD ICONS WITH CSS</a
+              >
+            </button>
+          </div>
+        </main>
+      </section>
+
+      <section class="p-16 justify-end d-flex relative">
+        <!-- aside nav -->
+        <aside class="w-10 docu-nav">
+          <div class="sticky top-10 p-16">
+            <header><p>NAVIGATION</p></header>
+            <!-- style nav -->
+            <ul class="px-20 py-16">
+              <p class="px-8">STYLING</p>
+              <li class="px-16">
+                <a href="#display">display</a>
+              </li>
+              <li class="px-16">
+                <a href="#position">position</a>
+              </li>
+              <li class="px-16">
+                <a href="#location">location</a>
+              </li>
+              <li class="px-16">
+                <a href="#padding">padding</a>
+              </li>
+              <li class="px-16">
+                <a href="#margin">margin</a>
+              </li>
+              <li class="px-16">
+                <a href="#alignment">alignment</a>
+              </li>
+              <li class="px-16">
+                <a href="#grid">grid</a>
+              </li>
+              <li class="px-16">
+                <a href="#grid-template">grid template</a>
+              </li>
+              <li class="px-16">
+                <a href="#flex-grid">flex-grid</a>
+              </li>
+              <li class="px-16">
+                <a href="#grid-span">grid span</a>
+              </li>
+              <li class="px-16">
+                <a href="#sizing">sizing</a>
+              </li>
+              <li class="px-16">
+                <a href="#visibility">visibility</a>
+              </li>
+            </ul>
+            <!-- icon nav -->
+            <ul class="px-20 py-16">
+              <p class="px-8">ICONS</p>
+              <li class="px-16">
+                <a href="#icons">icons</a>
+              </li>
+              <li class="px-16">
+                <a href="#icon-sizing">icon sizing</a>
+              </li>
+              <li class="px-16">
+                <a href="#icon-color">icon color</a>
+              </li>
+            </ul>
+          </div>
+        </aside>
+
+        <div class="flex-grid w-100 secondary">
+          <div class="row sticky top-0 border secondary">
+            <p class="col-1 col-2-s text-center border">TYPE</p>
+            <p class="col-2 col-3-s text-center border">SYNTAX</p>
+            <p class="col-7 col-4-s text-center border">ITEMS</p>
+            <p class="col-2 col-3-s text-center border">SAMPLE CLASS</p>
+          </div>
+          <!-- display -->
+          <div class="row primary" id="display">
+            <p class="col border px-8">
+              <b>Display:</b> change the display of an element.
+            </p>
+          </div>
+          <div class="row border">
+            <p class="col-1 col-2-s text-center border">DISPLAY</p>
+            <p class="col-2 col-3-s text-center border">
+              d-{display}-{break-point}
+            </p>
+            <div class="col-7 col-4-s px-16 flex flex-wrap border">
+              <p>display none: none</p>
+              <p>display flex: flex</p>
+              <p>display grid: grid</p>
+              <p>display block: block</p>
+              <p>display inline-flex: in-flex</p>
+              <p>display inline-block: in-block</p>
+            </div>
+            <div class="col-2 col-3-s text-center border">
+              <p>d-none</p>
+              <p>d-flex-xs</p>
+              <p>d-block-m</p>
+              <p>d-grid-l</p>
+            </div>
+          </div>
+          <!-- position -->
+          <div class="row primary" id="position">
+            <p class="col border px-8">
+              <b>POSITION:</b> Change element position type.
+            </p>
+          </div>
+          <div class="row border">
+            <p class="col-1 col-2-s text-center border">POSITION</p>
+            <p class="col-2 col-3-s text-center border">
+              {position}-{breakpoint}
+            </p>
+            <div class="col-7 col-4-s px-16 flex flex-wrap border">
+              <p>static: static</p>
+              <p>relative: relative</p>
+              <p>fixed: fixed</p>
+              <p>absolute: absolute</p>
+              <p>sticky: sticky</p>
+            </div>
+            <div class="col-2 col-3-s text-center border">
+              <p>static-xs</p>
+              <p>sticky-m</p>
+              <p>fixed-l</p>
+            </div>
+          </div>
+          <!-- location -->
+          <div class="row primary" id="location">
+            <p class="col border px-8">
+              <b>LOCATION:</b> Used for position absolute, fixed and sticky.
+              Define position of element. Position starts with 0px and
+              increments by 10 up to 100px. and aditional position are 150px and
+              200px.
+            </p>
+          </div>
+          <div class="row border">
+            <p class="col-1 col-2-s text-center border">LOCATION</p>
+            <p class="col-2 col-3-s text-center border">
+              {location}-{offset-px}-{breakpoint}
+            </p>
+            <div class="col-7 col-4-s px-16 flex flex-wrap border">
+              <p>top: top</p>
+              <p>bottom: bottom</p>
+              <p>left: left</p>
+              <p>right: right</p>
+            </div>
+            <div class="col-2 col-3-s text-center border">
+              <p>top-20-l</p>
+              <p>bottom-100-xl</p>
+              <p>left-20-s</p>
+              <p>right-20-xl</p>
+            </div>
+          </div>
+          <!-- padding -->
+          <div class="row primary" id="padding">
+            <p class="col border px-8">
+              <b>PADDING:</b> Define padding to give elements breathing ground.
+              Padding starts with 4px and increments by 4px up to 48px.
+            </p>
+          </div>
+          <div class="row border">
+            <p class="col-1 col-2-s text-center border">PADDING</p>
+            <p class="col-2 col-3-s text-center border">
+              {position}-{size in px}-{break-point}
+            </p>
+            <div class="col-7 col-4-s px-16 flex flex-wrap border">
+              <p>padding : p</p>
+              <p>padding-top : pt</p>
+              <p>padding-bottom : pb</p>
+              <p>padding-left : pl</p>
+              <p>padding-right : pr</p>
+              <p>padding-horizontal : px</p>
+              <p>padding-vertical : py</p>
+            </div>
+            <div class="col-2 col-3-s text-center border">
+              <p>p-16-xs</p>
+              <p>pt-24-s</p>
+              <p>pr-32-l</p>
+              <p>py-40-m</p>
+            </div>
+          </div>
+          <!-- margin -->
+          <div class="row primary" id="margin">
+            <p class="col border px-8">
+              <b>MARGIN:</b> Define margin to give elements spaces. Margin
+              starts with 4px and increments by 4px up to 48px.
+            </p>
+          </div>
+          <div class="row border">
+            <p class="col-1 col-2-s text-center border">Margin</p>
+            <p class="col-2 col-3-s text-center border">
+              {position}-{size in px}-{break-point}
+            </p>
+            <div class="col-7 col-4-s px-16 flex flex-wrap border">
+              <p>margin : m</p>
+              <p>margin-top : mt</p>
+              <p>margin-bottom : mb</p>
+              <p>margin-left : ml</p>
+              <p>margin-right : mr</p>
+              <p>margin-horizontal : mx</p>
+              <p>margin-vertical : my</p>
+            </div>
+            <div class="col-2 col-3-s text-center border">
+              <p>m-16-xs</p>
+              <p>mt-24-s</p>
+              <p>mr-32-l</p>
+              <p>my-40-m</p>
+            </div>
+          </div>
+          <!-- alignment -->
+          <div class="row primary" id="alignment">
+            <p class="col border px-8">
+              <b>ALIGNMENT</b> Used in dispaly = flex or grid elements. align
+              items for better readability and be more pleasing to the eyes.
+            </p>
+          </div>
+          <div class="row border">
+            <p class="col-1 col-2-s text-center border">Alignment</p>
+            <p class="col-2 col-3-s text-center border">
+              {alignment}-{position}-{break-point}
+            </p>
+            <div class="col-7 col-4-s px-16 flex flex-wrap border">
+              <p>align : align</p>
+              <p>justify: justify</p>
+              <p>text : text</p>
+              <p>start : start</p>
+              <p>center : center</p>
+              <p>end : end</p>
+            </div>
+            <div class="col-2 col-3-s text-center border">
+              <p>justify-center-xs</p>
+              <p>align-start-l</p>
+              <p>text-end-m</p>
+            </div>
+          </div>
+          <!-- grid -->
+          <div class="row primary" id="grid">
+            <p class="col border px-8">
+              <b>GRID:</b> Create a grid with 12 columns. create an element with
+              class of grid then nest a row in it. then nest columns to the row.
+            </p>
+            <p class="col border px-8">
+              example: &lt;div class="grid"&gt; &lt;div class="row"&gt; &lt;div
+              class="col-4"&gt; &lt;/div&gt; &lt;div class="col-8"&gt;
+              &lt;/div&gt; &lt;/div&gt; &lt;/div&gt;
+              <br />
+              This will have two columns. One spans 4 fractions of the grid
+              width and the other one spans 8 fractions of the grid width.
+            </p>
+          </div>
+          <div class="row border">
+            <p class="col-1 col-2-s text-center border">GRID</p>
+            <p class="col-2 col-3-s text-center border">
+              {col}-{span}-{break-point}
+            </p>
+            <div class="col-7 col-4-s px-16 flex flex-wrap border">
+              <p>grid: grid</p>
+              <p>grid-row: row</p>
+              <p>grid-column: col</p>
+            </div>
+            <div class="col-2 col-3-s text-center border">
+              <p>col-12-xs</p>
+              <p>col-8-s</p>
+              <p>col-4-m</p>
+            </div>
+          </div>
+          <!-- grid templating -->
+          <div class="row primary" id="grid-template">
+            <p class="col border px-8">
+              <b>GRID TEMPLATE:</b> Define a grid with default cell value of 12
+              by 12 and cell size of 100px by 50px by adding template. Define
+              number of columns and rows in order to create a grid template. The
+              cell size can be changed by referencing the css variables; for
+              height: --grid-cell-height, and fro width: grid-cell-width.
+            </p>
+          </div>
+          <div class="row border">
+            <p class="col-1 col-2-s text-center border">TEMPLATE</p>
+            <p class="col-2 col-3-s text-center border">template-{col}-{row}</p>
+            <div class="col-7 col-4-s px-16 flex flex-wrap border">
+              <p>3 by 4: 3-4</p>
+              <p>4 by 3: 4-3</p>
+              <p>4 by 6: 4-6</p>
+              <p>6 by 4: 6-4</p>
+              <p>6 by 9: 6-9</p>
+              <p>9 by 6: 9-6</p>
+              <p>9 by 12: 9-12</p>
+              <p>12 by 9: 12-9</p>
+            </div>
+            <div class="col-2 col-3-s text-center border">
+              <p>template-3-4</p>
+              <p>template-6-4</p>
+              <p>template-9-6</p>
+            </div>
+          </div>
+          <!-- flex-grid -->
+          <div class="row primary" id="flex-grid">
+            <p class="col border px-8">
+              <b>FLEX-GRID:</b> Creates a flex-box that nest 12 columns per row.
+              Used by nesting row in a flex-grid and then nesting col to row. In
+              this set-up you can add more that 12 columns per row and it will
+              wrap the overflow elements down.
+            </p>
+            <p class="col border px-8">
+              example: &lt;div class="flex-grid"&gt; &lt;div class="row"&gt;
+              &lt;div class="col-4"&gt; &lt;/div&gt; &lt;div class="col-8"&gt;
+              &lt;/div&gt; &lt;/div&gt; &lt;/div&gt;
+              <br />
+              This will have two columns. One takes 4/12 fractions of the grid
+              width and the other one spans 8/12 fractions of the grid width.
+            </p>
+          </div>
+          <div class="row border">
+            <p class="col-1 col-2-s text-center border">FLEX-GRID</p>
+            <p class="col-2 col-3-s text-center border">
+              {col}-{span}-{break-point}
+            </p>
+            <div class="col-7 col-4-s px-16 flex flex-wrap border">
+              <p>grid: flex-grid</p>
+              <p>grid-row: row</p>
+              <p>grid-column: col</p>
+            </div>
+            <div class="col-2 col-3-s text-center border">
+              <p>col-12-xs</p>
+              <p>col-8-s</p>
+              <p>col-4-m</p>
+            </div>
+          </div>
+          <!-- grid span-->
+          <div class="row primary" id="grid-span">
+            <p class="col border px-8">
+              <b>GRID SPAN:</b> Define element position in grid. Asign column or
+              row start and end to better position your elements with grid.
+            </p>
+          </div>
+          <div class="row border">
+            <p class="col-1 col-2-s text-center border">GRID SPAN</p>
+            <p class="col-2 col-3-s text-center border">
+              {column or row}-{grid cell}-{start or end}-{break-point}
+            </p>
+            <div class="col-7 col-4-s px-16 flex flex-wrap border">
+              <p>column: col</p>
+              <p>row: row</p>
+              <p>start: start</p>
+              <p>end: end</p>
+            </div>
+            <div class="col-2 col-3-s text-center border">
+              <p>col-start-1-xs</p>
+              <p>col-end-12-xs</p>
+              <p>row-start-4-m</p>
+              <p>row-end-6-m</p>
+            </div>
+          </div>
+          <!-- sizing -->
+          <div class="row primary" id="sizing">
+            <p class="col border px-8">
+              <b>SIZING:</b>Define element size for width or height. Sizes
+              starts from 20% and increments by 5 up to 100%.
+            </p>
+          </div>
+          <div class="row border">
+            <p class="col-1 col-2-s text-center border">SIZING</p>
+            <p class="col-2 col-3-s text-center border">
+              {width or height}-{size}-{break-point}
+            </p>
+            <div class="col-7 col-4-s px-16 flex flex-wrap border">
+              <p>width: w</p>
+              <p>max-width: max-w</p>
+              <p>min-width: min-w</p>
+              <p>height: h</p>
+              <p>max-height: max-h</p>
+              <p>min-height: min-h</p>
+              <p>grid-column: col</p>
+            </div>
+            <div class="col-2 col-3-s text-center border">
+              <p>max-w-25-xs</p>
+              <p>min-w-30-s</p>
+              <p>col-4-m</p>
+            </div>
+          </div>
+          <!-- visibility -->
+          <div class="row primary" id="visibility">
+            <p class="col border px-8">
+              <b>VISIBILITY:</b> Adjust visibility of element to fully opaque to
+              fully transparent or not visible at all. Opacity starts from 0 and
+              increments by ten up to 100. visible sets the element visible adn
+              non-visible removes visibility of an element. Opacity sets the
+              transparency of a visible element to specified value.
+            </p>
+          </div>
+          <div class="row secondary">
+            <p class="col-1 col-2-s text-center border">VISIBILITY</p>
+            <p class="col-2 col-3-s text-center border">
+              {visble or opacity}-{breakpoint}
+            </p>
+            <div class="col-7 col-4-s px-16 flex flex-wrap border">
+              <p>visibility: visible</p>
+              <p>no visibility: non-visible</p>
+              <p>opacity: opacity</p>
+            </div>
+            <div class="col-2 col-3-s text-center border">
+              <p>visible-xs</p>
+              <p>non-visible-m</p>
+              <p>opacity-30-xl</p>
+            </div>
+          </div>
+          <!-- icons -->
+          <div class="row primary" id="icons">
+            <p class="col border px-8">
+              <b>ICONS</b> for designing your web app. Create an "i" element and add icon class.
+            </p>
+          </div>
+          <div class="row primary">
+            <span
+              class="col-4-xs col-3-m col-2 d-flex flex-col align-center border"
+            >
+              <i class="icon html"></i>
+              html
+            </span>
+            <span
+              class="col-4-xs col-3-m col-2 d-flex flex-col align-center border"
+            >
+              <i class="icon css"></i>
+              css
+            </span>
+            <span
+              class="col-4-xs col-3-m col-2 d-flex flex-col align-center border"
+            >
+              <i class="icon javascript"></i>
+              javascript
+            </span>
+            <span
+              class="col-4-xs col-3-m col-2 d-flex flex-col align-center border"
+            >
+              <i class="icon php"></i>
+              php
+            </span>
+            <span
+              class="col-4-xs col-3-m col-2 d-flex flex-col align-center border"
+            >
+              <i class="icon angular"></i>
+              angular
+            </span>
+            <span
+              class="col-4-xs col-3-m col-2 d-flex flex-col align-center border"
+            >
+              <i class="icon reactjs"></i>
+              reactjs
+            </span>
+            <span
+              class="col-4-xs col-3-m col-2 d-flex flex-col align-center border"
+            >
+              <i class="icon nextjs"></i>
+              nextjs
+            </span>
+            <span
+              class="col-4-xs col-3-m col-2 d-flex flex-col align-center border"
+            >
+              <i class="icon nodejs"></i>
+              nodejs
+            </span>
+            <span
+              class="col-4-xs col-3-m col-2 d-flex flex-col align-center border"
+            >
+              <i class="icon laravel"></i>
+              laravel
+            </span>
+            <span
+              class="col-4-xs col-3-m col-2 d-flex flex-col align-center border"
+            >
+              <i class="icon postman"></i>
+              postman
+            </span>
+            <span
+              class="col-4-xs col-3-m col-2 d-flex flex-col align-center border"
+            >
+              <i class="icon database"></i>
+              database
+            </span>
+            <span
+              class="col-4-xs col-3-m col-2 d-flex flex-col align-center border"
+            >
+              <i class="icon firefox"></i>
+              firefox
+            </span>
+            <span
+              class="col-4-xs col-3-m col-2 d-flex flex-col align-center border"
+            >
+              <i class="icon opera"></i>
+              opera
+            </span>
+            <span
+              class="col-4-xs col-3-m col-2 d-flex flex-col align-center border"
+            >
+              <i class="icon chrome"></i>
+              chrome
+            </span>
+            <span
+              class="col-4-xs col-3-m col-2 d-flex flex-col align-center border"
+            >
+              <i class="icon gdrive"></i>
+              gdrive
+            </span>
+            <span
+              class="col-4-xs col-3-m col-2 d-flex flex-col align-center border"
+            >
+              <i class="icon unity"></i>
+              unity
+            </span>
+            <span
+              class="col-4-xs col-3-m col-2 d-flex flex-col align-center border"
+            >
+              <i class="icon playstore"> </i>
+              playstore
+            </span>
+            <span
+              class="col-4-xs col-3-m col-2 d-flex flex-col align-center border"
+            >
+              <i class="icon google"></i>
+              google
+            </span>
+            <span
+              class="col-4-xs col-3-m col-2 d-flex flex-col align-center border"
+            >
+              <i class="icon upwork"></i>
+              upwork
+            </span>
+            <span
+              class="col-4-xs col-3-m col-2 d-flex flex-col align-center border"
+            >
+              <i class="icon steam"></i>
+              steam
+            </span>
+            <span
+              class="col-4-xs col-3-m col-2 d-flex flex-col align-center border"
+            >
+              <i class="icon patreon"></i>
+              patreon
+            </span>
+            <span
+              class="col-4-xs col-3-m col-2 d-flex flex-col align-center border"
+            >
+              <i class="icon discord"></i>
+              discord
+            </span>
+            <span
+              class="col-4-xs col-3-m col-2 d-flex flex-col align-center border"
+            >
+              <i class="icon stack"></i>
+              stack
+            </span>
+            <span
+              class="col-4-xs col-3-m col-2 d-flex flex-col align-center border"
+            >
+              <i class="icon youtube"></i>
+              youtube
+            </span>
+            <span
+              class="col-4-xs col-3-m col-2 d-flex flex-col align-center border"
+            >
+              <i class="icon facebook"></i>
+              facebook
+            </span>
+            <span
+              class="col-4-xs col-3-m col-2 d-flex flex-col align-center border"
+            >
+              <i class="icon messenger"></i>
+              messenger
+            </span>
+            <span
+              class="col-4-xs col-3-m col-2 d-flex flex-col align-center border"
+            >
+              <i class="icon instagram"></i>
+              instagram
+            </span>
+            <span
+              class="col-4-xs col-3-m col-2 d-flex flex-col align-center border"
+            >
+              <i class="icon linkedin"></i>
+              linkedin
+            </span>
+            <span
+              class="col-4-xs col-3-m col-2 d-flex flex-col align-center border"
+            >
+              <i class="icon telegram"></i>
+              telegram
+            </span>
+            <span
+              class="col-4-xs col-3-m col-2 d-flex flex-col align-center border"
+            >
+              <i class="icon tiktok"></i>
+              tiktok
+            </span>
+            <span
+              class="col-4-xs col-3-m col-2 d-flex flex-col align-center border"
+            >
+              <i class="icon whatsapp"></i>
+              whatsapp
+            </span>
+            <span
+              class="col-4-xs col-3-m col-2 d-flex flex-col align-center border"
+            >
+              <i class="icon github"></i>
+              github
+            </span>
+            <span
+              class="col-4-xs col-3-m col-2 d-flex flex-col align-center border"
+            >
+              <i class="icon android"></i>
+              android
+            </span>
+            <span
+              class="col-4-xs col-3-m col-2 d-flex flex-col align-center border"
+            >
+              <i class="icon apple"></i>
+              apple
+            </span>
+            <span
+              class="col-4-xs col-3-m col-2 d-flex flex-col align-center border"
+            >
+              <i class="icon at-symbol"></i>
+              at-symbol
+            </span>
+            <span
+              class="col-4-xs col-3-m col-2 d-flex flex-col align-center border"
+            >
+              <i class="icon api"></i>
+              api
+            </span>
+            <span
+              class="col-4-xs col-3-m col-2 d-flex flex-col align-center border"
+            >
+              <i class="icon calendar"></i>
+              calendar
+            </span>
+            <span
+              class="col-4-xs col-3-m col-2 d-flex flex-col align-center border"
+            >
+              <i class="icon cloud-dload"></i>
+              cloud-dload
+            </span>
+            <span
+              class="col-4-xs col-3-m col-2 d-flex flex-col align-center border"
+            >
+              <i class="icon cloud-upload"></i>
+              cloud-upload
+            </span>
+            <span
+              class="col-4-xs col-3-m col-2 d-flex flex-col align-center border"
+            >
+              <i class="icon code"></i>
+              code
+            </span>
+            <span
+              class="col-4-xs col-3-m col-2 d-flex flex-col align-center border"
+            >
+              <i class="icon desktop"></i>
+              desktop
+            </span>
+            <span
+              class="col-4-xs col-3-m col-2 d-flex flex-col align-center border"
+            >
+              <i class="icon eye"></i>
+              eye
+            </span>
+            <span
+              class="col-4-xs col-3-m col-2 d-flex flex-col align-center border"
+            >
+              <i class="icon eye-hidden"></i>
+              eye-hidden
+            </span>
+            <span
+              class="col-4-xs col-3-m col-2 d-flex flex-col align-center border"
+            >
+              <i class="icon folder"></i>
+              folder
+            </span>
+            <span
+              class="col-4-xs col-3-m col-2 d-flex flex-col align-center border"
+            >
+              <i class="icon food"></i>
+              food
+            </span>
+            <span
+              class="col-4-xs col-3-m col-2 d-flex flex-col align-center border"
+            >
+              <i class="icon beverage"></i>
+              beverage
+            </span>
+            <span
+              class="col-4-xs col-3-m col-2 d-flex flex-col align-center border"
+            >
+              <i class="icon full-screen"></i>
+              full-screen
+            </span>
+            <span
+              class="col-4-xs col-3-m col-2 d-flex flex-col align-center border"
+            >
+              <i class="icon menu-grid"></i>
+              menu-grid
+            </span>
+            <span
+              class="col-4-xs col-3-m col-2 d-flex flex-col align-center border"
+            >
+              <i class="icon menu-burger"></i>
+              menu-burger
+            </span>
+            <span
+              class="col-4-xs col-3-m col-2 d-flex flex-col align-center border"
+            >
+              <i class="icon menu-kebab"></i>
+              menu-kebab
+            </span>
+            <span
+              class="col-4-xs col-3-m col-2 d-flex flex-col align-center border"
+            >
+              <i class="icon layer"></i>
+              layer
+            </span>
+            <span
+              class="col-4-xs col-3-m col-2 d-flex flex-col align-center border"
+            >
+              <i class="icon print"></i>
+              print
+            </span>
+            <span
+              class="col-4-xs col-3-m col-2 d-flex flex-col align-center border"
+            >
+              <i class="icon key"></i>
+              key
+            </span>
+            <span
+              class="col-4-xs col-3-m col-2 d-flex flex-col align-center border"
+            >
+              <i class="icon link"></i>
+              link
+            </span>
+            <span
+              class="col-4-xs col-3-m col-2 d-flex flex-col align-center border"
+            >
+              <i class="icon share"></i>
+              share
+            </span>
+            <span
+              class="col-4-xs col-3-m col-2 d-flex flex-col align-center border"
+            >
+              <i class="icon list"></i>
+              list
+            </span>
+            <span
+              class="col-4-xs col-3-m col-2 d-flex flex-col align-center border"
+            >
+              <i class="icon crop"></i>
+              crop
+            </span>
+            <span
+              class="col-4-xs col-3-m col-2 d-flex flex-col align-center border"
+            >
+              <i class="icon home"></i>
+              home
+            </span>
+            <span
+              class="col-4-xs col-3-m col-2 d-flex flex-col align-center border"
+            >
+              <i class="icon info"></i>
+              info
+            </span>
+            <span
+              class="col-4-xs col-3-m col-2 d-flex flex-col align-center border"
+            >
+              <i class="icon lock"></i>
+              lock
+            </span>
+            <span
+              class="col-4-xs col-3-m col-2 d-flex flex-col align-center border"
+            >
+              <i class="icon unlock"></i>
+              unlock
+            </span>
+            <span
+              class="col-4-xs col-3-m col-2 d-flex flex-col align-center border"
+            >
+              <i class="icon mail"></i>
+              mail
+            </span>
+            <span
+              class="col-4-xs col-3-m col-2 d-flex flex-col align-center border"
+            >
+              <i class="icon mobile"></i>
+              mobile
+            </span>
+            <span
+              class="col-4-xs col-3-m col-2 d-flex flex-col align-center border"
+            >
+              <i class="icon music"></i>
+              music
+            </span>
+            <span
+              class="col-4-xs col-3-m col-2 d-flex flex-col align-center border"
+            >
+              <i class="icon mute"></i>
+              mute
+            </span>
+            <span
+              class="col-4-xs col-3-m col-2 d-flex flex-col align-center border"
+            >
+              <i class="icon shuffle"></i>
+              shuffle
+            </span>
+            <span
+              class="col-4-xs col-3-m col-2 d-flex flex-col align-center border"
+            >
+              <i class="icon play"></i>
+              play
+            </span>
+            <span
+              class="col-4-xs col-3-m col-2 d-flex flex-col align-center border"
+            >
+              <i class="icon pause"></i>
+              pause
+            </span>
+            <span
+              class="col-4-xs col-3-m col-2 d-flex flex-col align-center border"
+            >
+              <i class="icon stop"></i>
+              stop
+            </span>
+            <span
+              class="col-4-xs col-3-m col-2 d-flex flex-col align-center border"
+            >
+              <i class="icon reload"></i>
+              reload
+            </span>
+            <span
+              class="col-4-xs col-3-m col-2 d-flex flex-col align-center border"
+            >
+              <i class="icon next"></i>
+              next
+            </span>
+            <span
+              class="col-4-xs col-3-m col-2 d-flex flex-col align-center border"
+            >
+              <i class="icon prev"></i>
+              prev
+            </span>
+            <span
+              class="col-4-xs col-3-m col-2 d-flex flex-col align-center border"
+            >
+              <i class="icon info"></i>
+              info
+            </span>
+            <span
+              class="col-4-xs col-3-m col-2 d-flex flex-col align-center border"
+            >
+              <i class="icon phone"></i>
+              phone
+            </span>
+            <span
+              class="col-4-xs col-3-m col-2 d-flex flex-col align-center border"
+            >
+              <i class="icon power"></i>
+              power
+            </span>
+            <span
+              class="col-4-xs col-3-m col-2 d-flex flex-col align-center border"
+            >
+              <i class="icon sleep"></i>
+              sleep
+            </span>
+            <span
+              class="col-4-xs col-3-m col-2 d-flex flex-col align-center border"
+            >
+              <i class="icon read"></i>
+              read
+            </span>
+            <span
+              class="col-4-xs col-3-m col-2 d-flex flex-col align-center border"
+            >
+              <i class="icon search"></i>
+              search
+            </span>
+            <span
+              class="col-4-xs col-3-m col-2 d-flex flex-col align-center border"
+            >
+              <i class="icon x-close"></i>
+              x-close
+            </span>
+            <span
+              class="col-4-xs col-3-m col-2 d-flex flex-col align-center border"
+            >
+              <i class="icon wifi"></i>
+              wifi
+            </span>
+            <span
+              class="col-4-xs col-3-m col-2 d-flex flex-col align-center border"
+            >
+              <i class="icon user"></i>
+              user
+            </span>
+            <span
+              class="col-4-xs col-3-m col-2 d-flex flex-col align-center border"
+            >
+              <i class="icon service"></i>
+              service
+            </span>
+            <span
+              class="col-4-xs col-3-m col-2 d-flex flex-col align-center border"
+            >
+              <i class="icon tag"></i>
+              tag
+            </span>
+            <span
+              class="col-4-xs col-3-m col-2 d-flex flex-col align-center border"
+            >
+              <i class="icon discount"></i>
+              discount
+            </span>
+            <span
+              class="col-4-xs col-3-m col-2 d-flex flex-col align-center border"
+            >
+              <i class="icon camera"></i>
+              camera
+            </span>
+            <span
+              class="col-4-xs col-3-m col-2 d-flex flex-col align-center border"
+            >
+              <i class="icon video"></i>
+              video
+            </span>
+            <span
+              class="col-4-xs col-3-m col-2 d-flex flex-col align-center border"
+            >
+              <i class="icon coffee"></i>
+              coffee
+            </span>
+            <span
+              class="col-4-xs col-3-m col-2 d-flex flex-col align-center border"
+            >
+              <i class="icon arrow-left"></i>
+              arrow-left
+            </span>
+            <span
+              class="col-4-xs col-3-m col-2 d-flex flex-col align-center border"
+            >
+              <i class="icon gift"></i>
+              gift
+            </span>
+            <span
+              class="col-4-xs col-3-m col-2 d-flex flex-col align-center border"
+            >
+              <i class="icon package"></i>
+              package
+            </span>
+            <span
+              class="col-4-xs col-3-m col-2 d-flex flex-col align-center border"
+            >
+              <i class="icon shipping"></i>
+              shipping
+            </span>
+            <span
+              class="col-4-xs col-3-m col-2 d-flex flex-col align-center border"
+            >
+              <i class="icon watch"></i>
+              watch
+            </span>
+            <span
+              class="col-4-xs col-3-m col-2 d-flex flex-col align-center border"
+            >
+              <i class="icon bluetooth"></i>
+              bluetooth
+            </span>
+            <span
+              class="col-4-xs col-3-m col-2 d-flex flex-col align-center border"
+            >
+              <i class="icon record"></i>
+              record
+            </span>
+            <span
+              class="col-4-xs col-3-m col-2 d-flex flex-col align-center border"
+            >
+              <i class="icon recycle"></i>
+              recycle
+            </span>
+            <span
+              class="col-4-xs col-3-m col-2 d-flex flex-col align-center border"
+            >
+              <i class="icon cash-coin"></i>
+              cash-coin
+            </span>
+            <span
+              class="col-4-xs col-3-m col-2 d-flex flex-col align-center border"
+            >
+              <i class="icon file-zip"></i>
+              file-zip
+            </span>
+            <span
+              class="col-4-xs col-3-m col-2 d-flex flex-col align-center border"
+            >
+              <i class="icon mortarboard"></i>
+              mortarboard
+            </span>
+            <span
+              class="col-4-xs col-3-m col-2 d-flex flex-col align-center border"
+            >
+              <i class="icon paperclip"></i>
+              paperclip
+            </span>
+            <span
+              class="col-4-xs col-3-m col-2 d-flex flex-col align-center border"
+            >
+              <i class="icon newspaper"></i>
+              newspaper
+            </span>
+            <span
+              class="col-4-xs col-3-m col-2 d-flex flex-col align-center border"
+            >
+              <i class="icon exclamation"></i>
+              exclamation
+            </span>
+            <span
+              class="col-4-xs col-3-m col-2 d-flex flex-col align-center border"
+            >
+              <i class="icon mic"></i>
+              mic
+            </span>
+            <span
+              class="col-4-xs col-3-m col-2 d-flex flex-col align-center border"
+            >
+              <i class="icon female"></i>
+              female
+            </span>
+            <span
+              class="col-4-xs col-3-m col-2 d-flex flex-col align-center border"
+            >
+              <i class="icon male"></i>
+              male
+            </span>
+            <span
+              class="col-4-xs col-3-m col-2 d-flex flex-col align-center border"
+            >
+              <i class="icon fingerprint"></i>
+              fingerprint
+            </span>
+            <span
+              class="col-4-xs col-3-m col-2 d-flex flex-col align-center border"
+            >
+              <i class="icon globe"></i>
+              globe
+            </span>
+            <span
+              class="col-4-xs col-3-m col-2 d-flex flex-col align-center border"
+            >
+              <i class="icon qrcode"></i>
+              qrcode
+            </span>
+            <span
+              class="col-4-xs col-3-m col-2 d-flex flex-col align-center border"
+            >
+              <i class="icon badge-hd"></i>
+              badge-hd
+            </span>
+            <span
+              class="col-4-xs col-3-m col-2 d-flex flex-col align-center border"
+            >
+              <i class="icon badge-sd"></i>
+              badge-sd
+            </span>
+            <span
+              class="col-4-xs col-3-m col-2 d-flex flex-col align-center border"
+            >
+              <i class="icon badge-4k"></i>
+              badge-4k
+            </span>
+            <span
+              class="col-4-xs col-3-m col-2 d-flex flex-col align-center border"
+            >
+              <i class="icon shop"></i>
+              shop
+            </span>
+            <span
+              class="col-4-xs col-3-m col-2 d-flex flex-col align-center border"
+            >
+              <i class="icon pin"></i>
+              pin
+            </span>
+            <span
+              class="col-4-xs col-3-m col-2 d-flex flex-col align-center border"
+            >
+              <i class="icon bank"></i>
+              bank
+            </span>
+            <span
+              class="col-4-xs col-3-m col-2 d-flex flex-col align-center border"
+            >
+              <i class="icon trash"></i>
+              trash
+            </span>
+            <span
+              class="col-4-xs col-3-m col-2 d-flex flex-col align-center border"
+            >
+              <i class="icon pencil"></i>
+              pencil
+            </span>
+            <span
+              class="col-4-xs col-3-m col-2 d-flex flex-col align-center border"
+            >
+              <i class="icon signpost"></i>
+              signpost
+            </span>
+            <span
+              class="col-4-xs col-3-m col-2 d-flex flex-col align-center border"
+            >
+              <i class="icon controller"></i>
+              controller
+            </span>
+            <span
+              class="col-4-xs col-3-m col-2 d-flex flex-col align-center border"
+            >
+              <i class="icon heart"></i>
+              heart
+            </span>
+            <span
+              class="col-4-xs col-3-m col-2 d-flex flex-col align-center border"
+            >
+              <i class="icon sliders"></i>
+              sliders
+            </span>
+            <span
+              class="col-4-xs col-3-m col-2 d-flex flex-col align-center border"
+            >
+              <i class="icon puzzle"></i>
+              puzzle
+            </span>
+            <span
+              class="col-4-xs col-3-m col-2 d-flex flex-col align-center border"
+            >
+              <i class="icon sword"></i>
+              sword
+            </span>
+            <span
+              class="col-4-xs col-3-m col-2 d-flex flex-col align-center border"
+            >
+              <i class="icon shield"></i>
+              shield
+            </span>
+            <span
+              class="col-4-xs col-3-m col-2 d-flex flex-col align-center border"
+            >
+              <i class="icon rocket"></i>
+              rocket
+            </span>
+            <span
+              class="col-4-xs col-3-m col-2 d-flex flex-col align-center border"
+            >
+              <i class="icon gauge"></i>
+              gauge
+            </span>
+            <span
+              class="col-4-xs col-3-m col-2 d-flex flex-col align-center border"
+            >
+              <i class=""></i>
+            </span>
+            <span
+              class="col-4-xs col-3-m col-2 d-flex flex-col align-center border"
+            >
+              <i class=""></i>
+            </span>
+          </div>
+          <!-- icon sizing -->
+          <div class="row primary" id="icon-sizing">
+            <p class="col border px-8">
+              <b>ICON SIZING</b> change size of your icons depending on where you use it.
+            </p>
+          </div>
+          <div class="row border">
+            <p class="col-1 col-2-s text-center border">ICON SIZING</p>
+            <p class="col-2 col-3-s text-center border">{size}-icon</p>
+            <div class="col-7 col-4-s px-16 flex flex-wrap border">
+              <p>small: s</p>
+              <p>medium: m</p>
+              <p>large: l</p>
+              <p>extra large: xl</p>
+            </div>
+            <div class="col-2 col-3-s text-center border">
+              <p>s-icon</p>
+              <p>m-icon</p>
+              <p>l-icon</p>
+              <p>xl-icon</p>
+            </div>
+          </div>
+          <!-- icon color -->
+          <div class="row primary" id="icon-color">
+            <p class="col border px-8">
+              <b>ICON COLOR</b> add branding to your icons by changing their colors. You can add colors on default and on hover states.
+            </p>
+          </div>
+          <div class="row border">
+            <p class="col-1 col-2-s text-center border">ICON COLOR</p>
+            <p class="col-2 col-3-s text-center border">{color} or hover-{color}</p>
+            <div class="col-7 col-4-s px-16 flex flex-wrap border">
+              <p>white: white</p>
+              <p>pink: pink</p>
+              <p>red: red</p>
+              <p>green: green</p>
+              <p>forest-green: forest</p>
+              <p>cyan :cyan</p>
+              <p>blue: blue</p>
+              <p>navy-blue: navy</p>
+              <p>yellow: yellow</p>
+              <p>gold: gold</p>
+              <p>orange: orange</p>
+              <p>purple: purple</p>
+              <p>indigo: indigo</p>
+              <p>brown: brown</p>
+              <p>gray: gray</p>
+              <p>silver: silver</p>
+            </div>
+            <div class="col-2 col-3-s text-center border">
+              <p>gold</p>
+              <p>silver</p>
+              <p>red</p>
+              <p>navy</p>
+              <p>hover-silver</p>
+              <p>hover-indigo</p>
+            </div>
+          </div>
+          </div>
+      </section>
+     </main>
+      <footer class="p-20 w-100">
+        <ul class="d-in-block-m d-flex px-8 py-20">
+          <li class="pl-16 pb-8 align-center">
+            <a href="" class="px-8"><i class="icon discord m-icon"></i>DISCORD</a>
+          </li>
+          <li class="pl-16 pb-8">
+            <a href="" class="px-8"><i class="icon github m-icon"></i> GITHUB</a>
+          </li>
+          <li class="pl-16 pb-8">
+            <a href="" class="px-8"><i class="icon youtube m-icon"></i>YOUTUBE</a>
+          </li>
+          <li class="pl-16 pb-8">
+            <a href="" class="px-8"><i class="icon mail m-icon"></i>EMAIL</a>
+          </li>
+        </ul>
+        <p class="text-center">&copy; 2024. All Rights Reserved.</p>
+      </footer>
+    </div>
+  </body>
+</html>

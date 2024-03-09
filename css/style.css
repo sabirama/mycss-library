@@ -1,0 +1,111 @@
+:root {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  scroll-behavior: smooth;
+}
+
+#root {
+  min-height: 100vh;
+  min-width: 360px;
+  background-color: rgb(95, 95, 95);
+}
+
+#root.home {
+  background-image: url(../assets/bg-1.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-blend-mode: multiply;
+  max-width: 1920px;
+  margin: auto;
+}
+
+#root.about {
+  background-color: rgb(44, 59, 68);
+  background-image: url(../assets/bg-2.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-blend-mode: color-dodge;
+  max-width: 1920px;
+  margin: auto;
+}
+
+#to-top {
+  z-index: 100;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: lightsteelblue;
+  transition-duration: 0.4s;
+  word-wrap: break-word;
+}
+
+p {
+  line-height: 1.2;
+}
+
+a {
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+a:hover {
+  color: white;
+  border-radius: 4px;
+  border-bottom: 2px solid lightseagreen;
+}
+
+ul {
+  list-style: none;
+}
+
+b {
+  color: white;
+}
+
+footer {
+  justify-self: bottom;
+}
+
+.primary a {
+  color: beige;
+}
+
+.border {
+  border: 2px solid cornflowerblue;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.icon {
+  height: 30px;
+  width: 30px;
+}
+
+.home-logo {
+  content: url(../assets/logo.png);
+  height: 30px;
+  width: auto;
+}
+
+@media screen and (max-width: 479px) {
+  .docu-nav {
+    position: fixed;
+    left: -220px;
+    width: fit-content;
+    top: 0px;
+    background: black;
+    z-index: 20;
+    cursor: pointer;
+  }
+  .docu-nav div {
+    width: 100%;
+  }
+  .docu-nav:hover {
+    left: 0;
+  }
+}
