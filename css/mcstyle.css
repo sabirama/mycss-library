@@ -39,47 +39,51 @@
 
   /* color schemes */
   .primary {
-    background-color: rgb(7, 79, 79);
+    background-color: #070F2B;
     font-weight: 600;
     transition-duration: 0.4s;
-    color: lightsalmon;
+    color: #9290C3;
   }
   .primary.border {
-    border: 2px solid lightsalmon;
+    border: 2px solid #1B1A55;
   }
   .primary.hover:hover {
-    box-shadow: 2px 2px 4px lightsalmon;
-    text-shadow: 2px 2px 4px lightsalmon;
+    box-shadow: 2px 2px 4px #070F2B;
+    text-shadow: 2px 2px 4px #9290C3;
   }
+
   .button.primary:active,
   .button-m.primary:active,
   .button-l.primary:active,
   .button-xl.primary:active {
-    background-color: darkcyan;
-    box-shadow: inset 2px 2px 4px lightsalmon;
-    color: indigo;
+    background-color: #9290C3;
+    box-shadow: inset 2px 2px 4px #9290C3;
+    color: #070F2B;
+    text-shadow: 2px 2px 4px #070F2B;
   }
 
   .secondary {
-    background-color: rgb(7, 7, 82);
+    background-color: #092635;
     font-weight: 600;
     transition-duration: 0.4s;
-    color: lightsteelblue;
+    color: #9EC8B9;
   }
   .secondary.border {
-    border: 2px solid lightsteelblue;
+    border: 2px solid #1B4242;
   }
   .secondary.hover:hover {
-    box-shadow: 2px 2px 4px lightsteelblue;
-    text-shadow: 2px 2px 4px lightsteelblue;
+    box-shadow: 2px 2px 4px  #092635;
+    text-shadow: 2px 2px 4px #9EC8B9;
   }
   .button.secondary:active,
   .button-m.secondary:active,
   .button-l.secondary:active,
   .button-xl.secondary:active {
-    background-color: dimgray;
-    box-shadow: inset 2px 2px 4px lightsteelblue;
-    color: black;
+    background-color: #9EC8B9;
+    border: 2px solid #1B4242;
+    box-shadow: inset 2px 2px 4px #9EC8B9;
+    color:  #092635;
+    text-shadow: 2px 4px 4px  #092635;
   }
 
   /* display */
