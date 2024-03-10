@@ -114,3 +114,7 @@ a:hover i.icon ,
     left: 0;
   }
 }
+
+.link {
+  color: rgb(125, 255, 253);
+}
