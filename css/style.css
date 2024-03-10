@@ -100,7 +100,7 @@ a:hover i.icon ,
 @media screen and (max-width: 479px) {
   .docu-nav {
     position: fixed;
-    left: -220px;
+    left: -195px;
     width: fit-content;
     top: 0px;
     background: black;
